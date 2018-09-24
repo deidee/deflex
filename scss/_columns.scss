@@ -39,6 +39,7 @@
         $used: append($used, $p);
 
         // At last, define the column.
+        // TODO: Consider leaving out breakpoint if it's the smallest.
         .col-#{$breakpoint}-#{$n}o#{$d} {
           flex: 0 0 $p;
           max-width: $p;
