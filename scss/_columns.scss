@@ -1,0 +1,23 @@
+
+%col {
+  position: relative;
+  width: 100%;
+  min-height: 1px; // Prevent columns from collapsing when empty.
+  padding-right: ($gutter / 2);
+  padding-left: ($gutter / 2);
+}
+
+[class|="col"] {
+  @extend %col;
+}
+
+.gutterless {
+  [class|="col"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+  //
+}

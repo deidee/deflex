@@ -1,6 +1,29 @@
 
-// TODO: Set number of columns.
-// TODO: Set breakpoints.
-// TODO: Set container widths.
-// TODO: Set gutter width.
-// TODO: Set base unit.
+// The base unit.
+$base: .75rem;
+
+// Sensible breakpoints.
+// Inspired by https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+// Copied from Grid.sexy.
+$breakpoints: (
+        xs: 0,
+        s: 300px,
+        m: 600px,
+        l: 900px,
+        xl: 1200px,
+        xxl: 1500px,
+        3xl: 1800px
+) !default;
+
+// The (maximum) container widths.
+$containers: (
+        m: 576px,
+        l: 864px,
+        xl: 1176px
+) !default;
+
+// The (maximum) number of columns.
+$columns: 16;
+
+// Grid gutter width.
+$gutter: $base;

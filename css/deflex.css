@@ -1,5 +1,30 @@
-:root {
-  background: green;
+[class|="col"] {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 0.375rem;
+  padding-left: 0.375rem;
+}
+
+.gutterless [class|="col"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.375rem;
+  margin-left: -0.375rem;
+}
+.row.gutterless {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=deflex.css.map */
