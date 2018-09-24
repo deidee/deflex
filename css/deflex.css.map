@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,KAAM;EACJ,UAAU,EAAE,KAAK",
+"sources": ["../scss/deflex.scss"],
+"names": [],
+"file": "deflex.css"
+}
