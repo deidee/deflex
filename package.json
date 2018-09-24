@@ -1,0 +1,29 @@
+{
+  "name": "@deidee/deflex",
+  "version": "1.0.0",
+  "description": "Stramien van deidee op basis van het flexboxmodel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deidee/deflex.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "flexbox"
+  ],
+  "author": "ACJ",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/deidee/deflex/issues"
+  },
+  "homepage": "https://github.com/deidee/deflex#readme",
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
