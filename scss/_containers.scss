@@ -1,5 +1,15 @@
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
+}
+
+@each $container in map_keys($containers) {
+  @include media-breakpoint-up($container, $breakpoints) {
+    .container {
+      max-width: map-get($containers, $container);
+    }
+  }
 }
