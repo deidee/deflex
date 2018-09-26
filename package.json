@@ -1,6 +1,6 @@
 {
   "name": "@deidee/deflex",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stramien van deidee op basis van het flexboxmodel.",
   "main": "index.js",
   "scripts": {
