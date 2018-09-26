@@ -44,9 +44,10 @@
         // Put percentage in the list.
         $used: append($used, $p);
 
+        $infix: breakpoint-infix($breakpoint, $breakpoints);
+
         // At last, define the column.
-        // TODO: Consider leaving out breakpoint if it's the smallest.
-        .col-#{$breakpoint}-#{$n}o#{$d} {
+        .col#{$infix}-#{$n}o#{$d} {
           flex: 0 0 $p;
           max-width: $p;
         }
@@ -54,7 +55,7 @@
         // Check if offsets are enabled and the width isn't 100% (offsetting by 100% makes no sense).
         @if($enable-offsets and $p != 100%) {
           // Define offsets (empty columns on the left).
-          .offset-#{$breakpoint}-#{$n}o#{$d} {
+          .offset#{$infix}-#{$n}o#{$d} {
             margin-left: $p;
           }
         }

@@ -1,7 +1,7 @@
 {
   "name": "@deidee/deflex",
-  "version": "1.0.2",
-  "description": "Stramien van deidee op basis van het flexboxmodel.",
+  "version": "1.0.3",
+  "description": "Stramien voor stijlbladen van deidee. Op basis van het flexboxmodel.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
