@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         sass: {
             src: {
                 options: {
-                    sourcemap: 'auto',
+                    sourcemap: 'none',
                     style: 'expanded'
                 },
                 files: {
