@@ -10,6 +10,12 @@ Stramien voor stijlbladen van deidee. Op basis van het flexboxmodel.
 
 ## Gebruik
 
+In de ``head``:
+
+    <link rel="stylesheet" href="https://hetcdn.nl/deidee/css/deflex.min.css">
+
+In de ``body``:
+
     <div class="container">
         <div class="row">
             <div class="col-1o2"></div>
