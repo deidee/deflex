@@ -4,6 +4,7 @@
   margin-right: auto;
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
+  width: 100%;
 }
 
 @each $container in map_keys($containers) {
