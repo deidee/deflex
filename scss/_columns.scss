@@ -27,36 +27,39 @@
 @each $breakpoint in map-keys($breakpoints) {
   $used: 0%;
 
-  // Walk through denominators.
-  @for $d from 1 through $columns {
+  @include media-breakpoint-up($breakpoint, $breakpoints) {
 
-    // Walk through numerators.
-    @for $n from 1 through $d {
+    // Walk through denominators.
+    @for $d from 1 through $columns {
 
-      // Calculate the percentage.
-      $p: percentage($n / $d);
+      // Walk through numerators.
+      @for $n from 1 through $d {
 
-      // Check if said percentage has been used before.
-      // We only want the lowest common denominator, in order to save bytes.
-      // (We do not need 10/20 when we have 1/2.)
-      @if(index($used, $p) == null) {
+        // Calculate the percentage.
+        $p: percentage($n / $d);
 
-        // Put percentage in the list.
-        $used: append($used, $p);
+        // Check if said percentage has been used before.
+        // We only want the lowest common denominator, in order to save bytes.
+        // (We do not need 10/20 when we have 1/2.)
+        @if(index($used, $p) == null) {
 
-        $infix: breakpoint-infix($breakpoint, $breakpoints);
+          // Put percentage in the list.
+          $used: append($used, $p);
 
-        // At last, define the column.
-        .col#{$infix}-#{$n}o#{$d} {
-          flex: 0 0 $p;
-          max-width: $p;
-        }
+          $infix: breakpoint-infix($breakpoint, $breakpoints);
 
-        // Check if offsets are enabled and the width isn't 100% (offsetting by 100% makes no sense).
-        @if($enable-offsets and $p != 100%) {
-          // Define offsets (empty columns on the left).
-          .offset#{$infix}-#{$n}o#{$d} {
-            margin-left: $p;
+          // At last, define the column.
+          .col#{$infix}-#{$n}o#{$d} {
+            flex: 0 0 $p;
+            max-width: $p;
+          }
+
+          // Check if offsets are enabled and the width isn't 100% (offsetting by 100% makes no sense).
+          @if($enable-offsets and $p != 100%) {
+            // Define offsets (empty columns on the left).
+            .offset#{$infix}-#{$n}o#{$d} {
+              margin-left: $p;
+            }
           }
         }
       }
