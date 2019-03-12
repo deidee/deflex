@@ -30,7 +30,7 @@ In de ``body``:
 # Installeren
 
 ```Shell
-git clone git@github.com:deidee/hetcanvas.git
+git clone git@github.com:deidee/deflex.git
 npm install
 ```
 
