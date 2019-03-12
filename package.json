@@ -1,6 +1,6 @@
 {
   "name": "@deidee/deflex",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Stramien voor stijlbladen van deidee. Op basis van het flexboxmodel.",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,9 @@
   "keywords": [
     "css",
     "scss",
-    "flexbox"
+    "flexbox",
+    "gulp",
+    "design"
   ],
   "author": "ACJ",
   "license": "UNLICENSED",
@@ -22,8 +24,9 @@
   },
   "homepage": "https://github.com/deidee/deflex#readme",
   "dependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
   }
 }
