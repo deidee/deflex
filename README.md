@@ -27,7 +27,7 @@ In de ``body``:
 </div>
 ```
 
-# Installeren
+## Installeren
 
 ```Shell
 git clone git@github.com:deidee/deflex.git
