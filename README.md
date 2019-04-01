@@ -73,7 +73,7 @@ Een dergelijke ``class`` leest dus als:
 
 > kolom streepje *breekpunt* streepje *teller* van *noemer*.
 
-Om bytes te besparen zijn alleen de meest eenvoudige breuken gebruikt om de te kolommen definiëren. Zo zijn `col-2o4` en `col-8o16` bijvoorbeeld **niet** beschikbaar omdat deze dezelfde uitkomst als `col-1o2` (namelijk 50%) zouden hebben.
+Om bytes te besparen zijn alleen de meest eenvoudige breuken gebruikt om de kolommen te definiëren. Zo zijn `col-2o4` en `col-8o16` bijvoorbeeld **niet** beschikbaar omdat deze dezelfde uitkomst als `col-1o2` (namelijk 50%) zouden hebben.
 
 Zoals eerder aangegeven wordt de aanduiding van het breekpunt bij het kleinste breekpunt (``xs``) tevens weggelaten. Hierdoor is `col-1o2` een valide `class` die werkt op alle resoluties.
 
