@@ -6,8 +6,8 @@
 
 [class|="col"] {
   min-height: 1px;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
   position: relative;
   width: 100%;
 }
@@ -4102,8 +4102,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   width: 100%;
 }
 
@@ -4128,8 +4128,8 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
 }
 
 .row.gutterless {
