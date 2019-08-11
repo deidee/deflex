@@ -7,18 +7,21 @@
   width: 100%;
 }
 
-[class|="col"] {
+[class|="col"],
+[class*=" col-"] {
   @extend %col;
 }
 
 .col {
+  @extend %col;
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
 }
 
 .gutterless {
-  [class|="col"] {
+  [class|="col"],
+  [class*=" col-"] {
     padding-left: 0;
     padding-right: 0;
   }
