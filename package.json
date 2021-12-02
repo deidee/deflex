@@ -1,6 +1,6 @@
 {
   "name": "@deidee/deflex",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Stramien voor stijlbladen van @deidee. Op basis van het flexboxmodel.",
   "main": "index.js",
   "scripts": {
