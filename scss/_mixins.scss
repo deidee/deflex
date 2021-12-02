@@ -1,5 +1,5 @@
 
-@mixin media-breakpoint-up($name, $breakpoints) {
+@mixin media-breakpoint-up($name, $breakpoints: $breakpoints) {
   $min: breakpoint-min($name, $breakpoints);
 
   @if $min {

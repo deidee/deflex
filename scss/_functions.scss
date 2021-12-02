@@ -1,9 +1,9 @@
 
-@function breakpoint-min($name, $breakpoints) {
+@function breakpoint-min($name, $breakpoints: $breakpoints) {
   $min: map-get($breakpoints, $name);
   @return if($min != 0, $min, null);
 }
 
-@function breakpoint-infix($name, $breakpoints) {
+@function breakpoint-infix($name, $breakpoints: $breakpoints) {
   @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 }
