@@ -1,13 +1,11 @@
 
 'use strict';
 
-var gulp = require('gulp');
-var pipeline = require('readable-stream').pipeline;
-var rename = require('gulp-rename');
-let sass = require('gulp-sass')(require('node-sass'));
-var sourcemaps = require('gulp-sourcemaps');
-
-sass.compiler = require('node-sass');
+let gulp = require('gulp');
+let pipeline = require('readable-stream').pipeline;
+let rename = require('gulp-rename');
+let sass = require('gulp-sass')(require('sass'));
+let sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
     return gulp.src('./scss/**/*.scss')

@@ -1,8 +1,9 @@
+@use "sass:math";
 
 %col {
   min-height: 1px; // Prevent columns from collapsing when empty.
-  padding-right: ($gutter / 2);
-  padding-left: ($gutter / 2);
+  padding-right: math.div($gutter, 2);
+  padding-left: math.div($gutter, 2);
   position: relative;
   width: 100%;
 }
@@ -39,7 +40,7 @@
       @for $n from 1 through $d {
 
         // Calculate the percentage.
-        $p: percentage($n / $d);
+        $p: percentage(math.div($n, $d));
 
         // Check if said percentage has been used before.
         // We only want the lowest common denominator, in order to save bytes.

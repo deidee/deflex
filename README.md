@@ -1,10 +1,10 @@
 # ![deFlex](https://deidee.com/logo.png?str=deFlex)
 
-Stramien voor stijlbladen van deidee. Op basis van het flexboxmodel.
+Stramien voor stijlbladen van [de idee](https://deidee.nl/). Op basis van het flexboxmodel.
 
 ## Breekpunten
 
-deFlex kent maar liefst zeven breekpunten (die natuurlijk niet allemaal te hoeven worden gebruikt):
+deFlex kent maar liefst zeven breekpunten (die niet allemaal te hoeven worden gebruikt):
 
 | aanduiding | breekpunt | vanaf |
 | ---------- | --------- | ----- |
@@ -20,7 +20,7 @@ De aanduiding ``xs`` wordt alleen in de _Sass_-broncode gebruikt. In de uiteinde
 
 ## Implementatie
 
-Het stijlblad kan eenvoudig aan een webpagina worden toegekend door de volgende regel toe te voegen aan de  ``head``:
+Het stijlblad kan eenvoudig aan een webpagina worden toegekend door de volgende regel toe te voegen aan de  ``<head>``:
 
 ```HTML
 <link rel="stylesheet" href="https://hetcdn.nl/deidee/css/deflex.min.css">
