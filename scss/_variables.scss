@@ -30,7 +30,7 @@ $columns: 16 !default;
 $grid-columns: $columns; // Mapping for Bootstrap compatibility.
 
 // Conditional loading of modules.
-$enable-debug: true !default;
+$enable-debug: false !default;
 $enable-offsets: true !default;
 $enable-orders: true !default;
 

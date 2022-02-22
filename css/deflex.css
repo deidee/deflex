@@ -5076,36 +5076,3 @@
   margin-left: 0;
   margin-right: 0;
 }
-
-body::after {
-  background-image: repeating-linear-gradient(to right, transparent, transparent 12px, rgba(255, 0, 0, 0.125) 12px, rgba(255, 0, 0, 0.125) calc((100% - 6rem) / 4 + 12px), transparent calc((100% - 6rem) / 4 + 12px), transparent calc((100% - 6rem) / 4 + 1.5rem));
-  background-position: center;
-  background-repeat: no-repeat;
-  bottom: 0;
-  content: "";
-  display: block;
-  left: 0;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 99999;
-}
-@media (min-width: 600px) {
-  body::after {
-    background-image: repeating-linear-gradient(to right, rgba(0, 0, 255, 0.125), rgba(0, 0, 255, 0.125) 12px, rgba(255, 0, 0, 0.125) 12px, rgba(255, 0, 0, 0.125) 24px, rgba(0, 0, 255, 0.125) 24px, rgba(0, 0, 255, 0.125) 36px);
-    background-size: 576px 100%;
-  }
-}
-@media (min-width: 900px) {
-  body::after {
-    background-image: repeating-linear-gradient(to right, rgba(0, 0, 255, 0.125), rgba(0, 0, 255, 0.125) 12px, rgba(255, 0, 0, 0.125) 12px, rgba(255, 0, 0, 0.125) 42px, rgba(0, 0, 255, 0.125) 42px, rgba(0, 0, 255, 0.125) 54px);
-    background-size: 864px 100%;
-  }
-}
-@media (min-width: 1200px) {
-  body::after {
-    background-image: repeating-linear-gradient(to right, rgba(0, 0, 255, 0.125), rgba(0, 0, 255, 0.125) 12px, rgba(255, 0, 0, 0.125) 12px, rgba(255, 0, 0, 0.125) 61.5px, rgba(0, 0, 255, 0.125) 61.5px, rgba(0, 0, 255, 0.125) 73.5px);
-    background-size: 1176px 100%;
-  }
-}
