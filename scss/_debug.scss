@@ -1,0 +1,58 @@
+
+@use "sass:math";
+
+@if $enable-debug {
+  $debug-column-color: transparentize(red, .875);
+  $debug-column-color-2: transparentize(blue, .875);
+  $half-gutter: 12px;
+  $grid-columns-mobile: 4;
+  $grid-columns-desktop: $grid-columns;
+
+  body {
+    &::after {
+      background-image: repeating-linear-gradient(to right,
+              transparent,
+              transparent $half-gutter,
+              $debug-column-color $half-gutter,
+              $debug-column-color calc((100% - #{$grid-columns-mobile * $grid-gutter-width}) / #{$grid-columns-mobile} + #{$half-gutter}),
+              transparent calc((100% - #{$grid-columns-mobile * $grid-gutter-width}) / #{$grid-columns-mobile} + #{$half-gutter}),
+              transparent calc((100% - #{$grid-columns-mobile * $grid-gutter-width}) / #{$grid-columns-mobile} + #{$grid-gutter-width}));
+      background-position: center;
+      background-repeat: no-repeat;
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 0;
+      pointer-events: none;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 99999;
+
+      @each $breakpoint, $container-max-width in $container-max-widths {
+        @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+          $grid-gutter-width: 24px;
+
+          $column-width: math.div(($container-max-width - $grid-columns * $grid-gutter-width), $grid-columns);
+
+          background-image: repeating-linear-gradient(to right,
+                  $debug-column-color-2,
+                  $debug-column-color-2 $half-gutter,
+                  $debug-column-color $half-gutter,
+                  $debug-column-color $column-width + $half-gutter,
+                  $debug-column-color-2 $column-width + $half-gutter,
+                  $debug-column-color-2 $column-width + $grid-gutter-width);
+          background-size: $container-max-width 100%;
+        }
+      }
+    }
+
+    %grid-row {
+      outline: dotted cyan rem(1);
+    }
+
+    %grid-column {
+      outline: dotted red rem(1);
+    }
+  }
+}

@@ -1,3 +1,4 @@
+@use "sass:math";
 
 // The base unit.
 $base: .75rem !default;
@@ -14,6 +15,7 @@ $breakpoints: (
         xxl: 1500px,
         3xl: 1800px
 ) !default;
+$grid-breakpoints: $breakpoints; // Mapping for Bootstrap compatibility.
 
 // The (maximum) container widths.
 $containers: (
@@ -21,14 +23,18 @@ $containers: (
         l: 864px,
         xl: 1176px
 ) !default;
+$container-max-widths: $containers; // Mapping for Bootstrap compatibility.
 
 // The (maximum) number of columns.
 $columns: 16 !default;
+$grid-columns: $columns; // Mapping for Bootstrap compatibility.
 
 // Conditional loading of modules.
-$enable-debug: false !default;
+$enable-debug: true !default;
 $enable-offsets: true !default;
 $enable-orders: true !default;
 
 // Grid gutter width.
 $gutter: 2 * $base !default;
+$grid-gutter-width: $gutter; // Mapping for Bootstrap compatibility.
+$half-gutter: math.div($gutter, 2);
