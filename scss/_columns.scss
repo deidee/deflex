@@ -15,9 +15,7 @@
 
 .col {
   @extend %col;
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
+  flex: 1 0 0%;
 }
 
 .gutterless {
@@ -32,6 +30,12 @@
   $used: 0%;
 
   @include media-breakpoint-up($breakpoint, $breakpoints) {
+
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    .col#{$infix} {
+      flex: 1 0 0%;
+    }
 
     // Walk through denominators.
     @for $d from 1 through $columns {
@@ -49,8 +53,6 @@
 
           // Put percentage in the list.
           $used: append($used, $p);
-
-          $infix: breakpoint-infix($breakpoint, $breakpoints);
 
           // At last, define the column.
           .col#{$infix}-#{$n}o#{$d} {

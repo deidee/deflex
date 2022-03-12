@@ -14,15 +14,17 @@
 }
 
 .col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
+  flex: 1 0 0%;
 }
 
 .gutterless [class|=col],
 .gutterless [class*=" col-"] {
   padding-left: 0;
   padding-right: 0;
+}
+
+.col {
+  flex: 1 0 0%;
 }
 
 .col-1o1 {
@@ -742,6 +744,10 @@
 }
 
 @media (min-width: 300px) {
+  .col-s {
+    flex: 1 0 0%;
+  }
+
   .col-s-1o1 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1459,6 +1465,10 @@
   }
 }
 @media (min-width: 600px) {
+  .col-m {
+    flex: 1 0 0%;
+  }
+
   .col-m-1o1 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -2176,6 +2186,10 @@
   }
 }
 @media (min-width: 900px) {
+  .col-l {
+    flex: 1 0 0%;
+  }
+
   .col-l-1o1 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -2893,6 +2907,10 @@
   }
 }
 @media (min-width: 1200px) {
+  .col-xl {
+    flex: 1 0 0%;
+  }
+
   .col-xl-1o1 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -3610,6 +3628,10 @@
   }
 }
 @media (min-width: 1500px) {
+  .col-xxl {
+    flex: 1 0 0%;
+  }
+
   .col-xxl-1o1 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -4327,6 +4349,10 @@
   }
 }
 @media (min-width: 1800px) {
+  .col-3xl {
+    flex: 1 0 0%;
+  }
+
   .col-3xl-1o1 {
     flex: 0 0 100%;
     max-width: 100%;
