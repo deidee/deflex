@@ -8,9 +8,18 @@
   width: 100%;
 }
 
+%cols {
+  gap: $gutter;
+}
+
 [class|="col"],
 [class*=" col-"] {
   @extend %col;
+}
+
+[class|="cols"],
+[class*=" cols-"] {
+  @extend %cols;
 }
 
 .col {
@@ -18,11 +27,21 @@
   flex: 1 0 0%;
 }
 
+.cols {
+  @extend %cols;
+  columns: auto;
+}
+
 .gutterless {
   [class|="col"],
   [class*=" col-"] {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  [class|="cols"],
+  [class*=" cols-"] {
+    gap: 0;
   }
 }
 
@@ -68,6 +87,10 @@
             }
           }
         }
+      }
+
+      .cols#{$infix}-#{$d} {
+        columns: $d;
       }
     }
   }
