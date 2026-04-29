@@ -1,3 +1,5 @@
+@use "variables" as *;
+@use "functions" as *;
 
 @mixin media-breakpoint-up($name, $breakpoints: $breakpoints) {
   $min: breakpoint-min($name, $breakpoints);

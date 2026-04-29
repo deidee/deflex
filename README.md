@@ -1,6 +1,6 @@
 # ![deFlex](https://deidee.com/logo.png?str=deFlex)
 
-Stramien voor stijlbladen van [de idee](https://deidee.nl/). Op basis van het flexboxmodel.
+Een stramien voor stijlbladen van [de idee](https://deidee.nl/). Op basis van het flexboxmodel.
 
 ## Breekpunten
 

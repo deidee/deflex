@@ -1,6 +1,15 @@
+@use "sass:list";
+@use "sass:map";
 @use "sass:math";
+@use "sass:selector";
+@use "functions" as *;
+@use "mixins" as *;
+@use "variables" as *;
 
 %col {
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
   min-height: 1px; // Prevent columns from collapsing when empty.
   padding-right: math.div($gutter, 2);
   padding-left: math.div($gutter, 2);
@@ -45,7 +54,7 @@
   }
 }
 
-@each $breakpoint in map-keys($breakpoints) {
+@each $breakpoint in map.keys($breakpoints) {
   $used: 0%;
 
   @include media-breakpoint-up($breakpoint, $breakpoints) {
@@ -63,15 +72,15 @@
       @for $n from 1 through $d {
 
         // Calculate the percentage.
-        $p: percentage(math.div($n, $d));
+        $p: math.percentage(math.div($n, $d));
 
         // Check if said percentage has been used before.
         // We only want the lowest common denominator, in order to save bytes.
         // (We do not need 10/20 when we have 1/2.)
-        @if(index($used, $p) == null) {
+        @if(list.index($used, $p) == null) {
 
           // Put percentage in the list.
-          $used: append($used, $p);
+          $used: list.append($used, $p);
 
           // At last, define the column.
           .col#{$infix}-#{$n}o#{$d} {

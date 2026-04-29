@@ -1,5 +1,8 @@
 
 @use "sass:math";
+@use "functions" as *;
+@use "mixins" as *;
+@use "variables" as *;
 
 @if $enable-debug {
   $debug-column-color: transparentize(red, .875);

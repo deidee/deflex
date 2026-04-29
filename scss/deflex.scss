@@ -1,12 +1,12 @@
 
-@import "variables";
+@use "variables";
 
-@import "functions";
-@import "mixins";
+@use "functions";
+@use "mixins";
 
-@import "base";
-@import "columns";
-@import "containers";
-@import "rows";
+@use "base";
+@use "columns";
+@use "containers";
+@use "rows";
 
-@import "debug";
+@use "debug";

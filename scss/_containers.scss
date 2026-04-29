@@ -1,4 +1,7 @@
+@use "sass:map";
 @use "sass:math";
+@use "mixins" as *;
+@use "variables" as *;
 
 .container {
   margin-left: auto;
@@ -8,10 +11,10 @@
   width: 100%;
 }
 
-@each $container in map_keys($containers) {
+@each $container in map.keys($containers) {
   @include media-breakpoint-up($container, $breakpoints) {
     .container {
-      max-width: map-get($containers, $container);
+      max-width: map.get($containers, $container);
     }
   }
 }
