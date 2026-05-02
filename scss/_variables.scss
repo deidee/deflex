@@ -37,4 +37,4 @@ $enable-orders: true !default;
 // Grid gutter width.
 $gutter: 2 * $base !default;
 $grid-gutter-width: $gutter !default; // Mapping for Bootstrap compatibility.
-$half-gutter: math.div($gutter, 2);
+$half-gutter: math.div($gutter, 2) !default;

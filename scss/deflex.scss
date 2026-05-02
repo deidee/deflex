@@ -1,12 +1,12 @@
 
-@use "variables";
+@forward "variables";
 
-@use "functions";
-@use "mixins";
+@forward "functions";
+@forward "mixins";
 
-@use "base";
-@use "columns";
-@use "containers";
-@use "rows";
+@forward "base";
+@forward "columns";
+@forward "containers";
+@forward "rows";
 
-@use "debug";
+@forward "debug";
